@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('alfons-morales-YLSwjSy7stw-unsplash.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    margin:0;  
+}
+
+.container{
+    width: 400px;
+    background-image: url('simple-old-paper-1.jpg');
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.form{
+    padding: 20px 40px;
+}
+
+.form-control{
+    margin-bottom:10px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-control lable {
+    display: inline-block;
+    margin-bottom:5px;
+}
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border:2px solid #d8d1d1;
+}
+
+.form-control.success input{
+    border:2px solid rgb(26, 167, 26);
+}
+.form-control.error input{
+    border:2px solid rgb(228, 29, 22);
+}
+.form-control small{
+    position:absolute;
+    margin: 3px;
+    visibility: hidden;
+}
+button{
+    background-color: rgb(177, 144, 94);
+    color:#fff;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius:4px;
+    border:2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label:nth-last-child(1) {
+    padding-right: 0px;
+}
+
+label::before {
+    content:"";
+    border: 2px solid black;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: -2px 10px;
+    margin-left: 0;
+    border-radius: 50%;
+}
+
+label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 7px;
+    height:7px;
+    background:rgba(139, 69, 19, 0);
+    left: 3.5px;
+    top: 9px;
+    margin: -2px 10px;
+    margin-left:0;
+    border-radius: 50%;
+
+}
+
+input[type="radio"]:checked+ label::after{
+    background:rgba(139, 69, 19);
+}
+
+#con{
+    position: relative;
+    bottom: 1F0px;
+    left: 80px;
+    width: 160px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+h6{
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+small{
+    color: rgb(228, 29, 22);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

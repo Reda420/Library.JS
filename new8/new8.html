@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="new8.css" rel="stylesheet" />
+        <title>Library</title>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form">
+                <div class="form-control">
+                    <lable for="username" name="username">Book Title</lable>
+                    <input id="txtUserName" type="text" name="username" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <lable for="email" name="email">Author Name</lable>
+                    <input id="txtEmail" type="text" name="email" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <lable for="pwd" name="pwd">Price</lable>
+                    <input id="txtPwd" type="text" name="pwd" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <lable for="date" name="date">Date</lable>
+                    <input id="date" type="date" name="date" />
+                    <small>Error Message</small>
+                </div>
+
+                <p class="type">Book Type:</p>
+                <div class="form-control">
+                    <input type="radio" id="rd" c>
+                    <label for="novel">Novel</label>
+    
+                    <input type="radio" id="rd" name="type" value="essay">
+                    <label for="essay">Essay</label>  
+    
+                    <input type="radio" id="rd" name="type" value="comic">
+                    <label for="comic">Comic Strip</label>
+                    <small>Select a type</small>
+                </div>
+                
+    
+                <p class="type2">Language:</p>
+        <select  name="language" id="con">
+            <option disabled selected hidden value=>-Choose a language-</option>           
+            <option value="Eng">English</option>
+            <option value="Fr">French</option>
+            <option value="Arb">Arabic</option>
+        </select> <br> <br>
+        
+
+                <div class="form-control">
+                    <button>SUBMIT</button>
+                </div>
+                
+            </form>
+        </div>
+        <script src="new8.js"></script>
+    </body>
+</html>
